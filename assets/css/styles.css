@@ -253,3 +253,30 @@ button {
     bottom: -45px;
     right: 13px;
 }
+
+/* Social group */
+.social-group {
+    margin-top: 130px;
+    margin-bottom: 106px;
+}
+
+.social-group__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 121px;
+    border-radius: 999px;
+    background-color: #e2eddf;
+}
+
+.social-discord {
+    display: flex;
+    align-items: center;
+}
+
+.social-discord-brand {
+    margin-left: 11px;
+    color: #163c35;
+    font-size: 2.6rem;
+    line-height: normal;
+}
