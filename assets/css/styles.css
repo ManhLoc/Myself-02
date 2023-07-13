@@ -327,7 +327,8 @@ button {
 
 .service__heading::after,
 .process__heading::after,
-.video__heading::after {
+.video__heading::after,
+.blog__heading::after {
     display: inline-block;
     content: "";
     width: 66px;
@@ -828,4 +829,117 @@ button {
 
 .feature-item__desc {
     margin-top: 12px;
+}
+
+/* Blog */
+.blog__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.blog__heading {
+    width: 557px;
+}
+
+.blog__desc {
+    width: 409px;
+    color: var(--primary--color-desc);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.blog__article {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.blog-item {
+    border-radius: 40px 40px 20px 20px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.blog-item:hover {
+    border-radius: 40px 40px 20px 20px;
+    background-color: #fff;
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+
+.blog-item__thumb {
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.blog__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 40px 0px 0px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.blog__img:hover {
+    transform: scale(1.2);
+}
+
+.blog-item:hover .blog__img {
+    transform: scale(1.2);
+}
+
+.blog-item__content {
+    padding: 26px 0 12px;
+    transition: 0.4s;
+}
+
+.blog-item:hover .blog-item__content {
+    overflow: hidden;
+    transform: translateX(9px);
+}
+
+.blog-item__cta {
+    width: 107px;
+    height: 26px;
+    color: #000;
+    background-color: #e2eddf;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.blog-item__cta:hover {
+    color: #e2eddf;
+    background-color: #143c3c;
+}
+
+.blog-item__heading {
+    display: inline-block;
+    width: 346px;
+    margin-top: 13px;
+    color: #143c3c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.blog-item__row {
+    margin-top: 38px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.blog-item__date {
+    margin-top: 16px;
+    text-align: right;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-right: 15px;
 }
